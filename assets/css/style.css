@@ -1729,3 +1729,11 @@ textarea.form-input::-webkit-resizer { display: none; }
   text-decoration: none;
   cursor: pointer;
 }
+
+:root {
+  --light-gray: hsl(0, 0%, 90%);
+}
+.light-theme {
+  --smoky-black: hsl(0, 0%, 95%);
+  --white-2: hsl(0, 0%, 10%);
+}
