@@ -12,7 +12,10 @@ const sidebar = document.querySelector("[data-sidebar]");
 const sidebarBtn = document.querySelector("[data-sidebar-btn]");
 
 // sidebar toggle functionality for mobile
-sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
+sidebarBtn.addEventListener("click", function () {
+  elementToggleFunc(sidebar);
+  sidebar.focus();
+});
 
 // contact form variables
 const form = document.querySelector("[data-form]");
@@ -56,3 +59,10 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+const themeBtn = document.createElement("button");
+themeBtn.innerHTML = "Toggle Theme";
+document.body.appendChild(themeBtn);
+themeBtn.addEventListener("click", () => {
+  document.body.classList.toggle("light-theme");
+});
